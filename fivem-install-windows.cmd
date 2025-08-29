@@ -5,7 +5,7 @@ title FiveM Server Installer by SuperHoriDev
 :: This script will automatically download the latest recommended build of FiveM.
 :: The artifacts list can be found at: https://runtime.fivem.net/artifacts/fivem/build_server_windows/master/
 set "DEFAULT_BASE_URL=https://runtime.fivem.net/artifacts/fivem/build_server_windows/master/17000-e0ef7490f76a24505b8bac7065df2b7075e610ba/server.7z"
-set "DEFAULT_INSTALL_PATH=C:\Users\Administrator\Desktop\FXServer"
+set "DEFAULT_INSTALL_PATH=C:\Users\%USERNAME%\Desktop\FXServer"
 
 :: --- Prerequisite Check ---
 echo Checking for prerequisites...
@@ -138,7 +138,7 @@ goto end_message
 :: --- Completion Message ---
 echo ----------------------------------------------------------------
 echo  FiveM server artifacts successfully installed!
-echo  
+echo. 
 echo  Server Path: %INSTALL_PATH%
 echo.
 echo  Next Steps:
