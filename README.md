@@ -1,11 +1,10 @@
 # FIVEM-AutoDownload
 Automatic download for Fivem artifacts on windows
 
-### Prerequisites
+## Prerequisites
 
 `` curl, 7zip ``
-
-### Running the script
+## Some fixing cuz windows is fucked up
 
 First set the path for 7-Zip so it can be accessed via cmd then restart the terminal
 
@@ -13,4 +12,14 @@ First set the path for 7-Zip so it can be accessed via cmd then restart the term
 
 or use the Environment Variables editor in windows
 
-Now you can download the .cmd file as admin and provide the required data or just use the default ones
+## Running
+
+After you've done everything you can run the ``.cmd`` or ``.ps1`` script and the server will install itself
+
+### OR
+
+Use the command:
+
+```
+irm https://raw.githubusercontent.com/superhoridev/FIVEM-AutoDownload/refs/heads/main/fivem-install-windows.ps1 | iex
+```
